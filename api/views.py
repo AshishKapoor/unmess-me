@@ -1,6 +1,4 @@
-from django.shortcuts import render
-from rest_framework import generics, viewsets
-from rest_framework.viewsets import ViewSetMixin
+from rest_framework import viewsets
 
 from api.models import Movie
 from api.serializers import MovieSerializer
