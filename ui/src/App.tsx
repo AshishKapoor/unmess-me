@@ -62,7 +62,7 @@ function App() {
                   borderRadius: "20px",
                   height: "200px",
                 }}
-                src={`/public/${i + 1}.jpeg`}
+                src={`/${i + 1}.jpeg`}
                 alt={"/${i+1}.jpeg"}
               />
               <h2>{`${d?.first_name} ${d?.last_name}`}</h2>
