@@ -1,15 +1,10 @@
 from rest_framework import serializers
 
-from api.models import Movie, TVShow
+from api.models import InteriorDesigner
 
 
-class MovieSerializer(serializers.ModelSerializer):
+class InteriorDesignerSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Movie
+        model = InteriorDesigner
         fields = '__all__'
 
-
-class TVShowSerializer(serializers.ModelSerializer):
-    class Meta:
-        model = TVShow
-        fields = '__all__'

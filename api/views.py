@@ -1,16 +1,10 @@
-from rest_framework import viewsets
+from rest_framework import viewsets, permissions
 
-from api.models import Movie, TVShow
-from api.serializers import MovieSerializer, TVShowSerializer
+from api.models import InteriorDesigner
+from api.serializers import InteriorDesignerSerializer
 
 
-class MovieViewSet(viewsets.ModelViewSet):
+class InteriorDesignerViewSet(viewsets.ModelViewSet):
     lookup_field = 'id'
-    queryset = Movie.objects.all()
-    serializer_class = MovieSerializer
-
-
-class TVShowViewSet(viewsets.ModelViewSet):
-    lookup_field = 'id'
-    queryset = TVShow.objects.all()
-    serializer_class = TVShowSerializer
+    queryset = InteriorDesigner.objects.all()
+    serializer_class = InteriorDesignerSerializer

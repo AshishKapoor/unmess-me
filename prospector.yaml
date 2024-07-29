@@ -1,0 +1,28 @@
+#output-format: json
+
+strictness: high
+#test-warnings: true
+#doc-warnings: false
+
+#inherits:
+#  - my/other/profile.yml
+
+ignore-paths:
+  - asset/migrations
+
+#ignore-patterns:
+#  - (^|/)skip(this)?(/|$)
+
+pycodestyle:
+#  disable:
+#    - W602
+#    - W603
+#  enable:
+#    - W601
+ options:
+   max-line-length: 120
+
+mccabe:
+  run: true
+#  disable:
+#    - MC0001

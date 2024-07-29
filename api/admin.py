@@ -1,6 +1,6 @@
 from django.contrib import admin
-from .models import Movie, TVShow
+from .models import InteriorDesigner
 
 # Register your models here.
-admin.site.register(Movie)
-admin.site.register(TVShow)
+admin.site.register(InteriorDesigner)
+
