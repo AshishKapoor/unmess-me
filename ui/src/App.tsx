@@ -23,7 +23,7 @@ function App() {
   const [designers, setDesignerData] = useState<Data[] | undefined>(undefined);
 
   useEffect(() => {
-    fetch("http://localhost:8000/api/designers/")
+    fetch("https://unmess.sannty.in/api/designers/")
       .then((response) => response.json())
       .then((data) => setDesignerData(data?.results));
   }, []);
