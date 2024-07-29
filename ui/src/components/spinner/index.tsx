@@ -39,7 +39,7 @@ function Spinner({
   strokeWidth = 0.7,
 }) {
   const actualPath = useMotionValue(frames[0]);
-  const ref = useRef(null);
+  const ref: any = useRef(null);
   const rotation = useMotionValue(0);
   const easedRotation = useTransform(rotation, [0, 1], [0, 360], {
     ease: easeInOut,
