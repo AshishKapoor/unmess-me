@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import "./App.css";
 import React from "react";
+import { AnimateSpinner } from "./components/spinner";
 
 type Data = {
   id: number;
@@ -29,7 +30,7 @@ function App() {
   }, []);
 
   if (Array.isArray(designers) && designers.length === 0) {
-    return <div>Loading Designers...</div>;
+    return <div>No Data Found</div>;
   }
 
   function renderSection(heading: string, data: Data[] | undefined) {
@@ -79,6 +80,10 @@ function App() {
         </section>
       </>
     );
+  }
+
+  if (designers == undefined) {
+    return <AnimateSpinner size={128} color="orange" />;
   }
 
   return (
