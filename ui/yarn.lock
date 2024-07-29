@@ -456,6 +456,11 @@
   dependencies:
     "@babel/types" "^7.20.7"
 
+"@types/flubber@^0.4.0":
+  version "0.4.0"
+  resolved "https://registry.yarnpkg.com/@types/flubber/-/flubber-0.4.0.tgz#8de22e8cdfe782b5768061ef4a49eca39795e6f5"
+  integrity sha512-q9u6zseKgOBc0sAn/aPyi0vMNtXiLrNHSvj/tMXg+X2vk0jwX7obXgLISBmryGFvfszbId1JGT/8CcwB3vC6yg==
+
 "@types/json-schema@^7.0.12":
   version "7.0.15"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.15.tgz#596a1747233694d50f6ad8a7869fcb6f56cf5841"
