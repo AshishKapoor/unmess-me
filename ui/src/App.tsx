@@ -29,9 +29,9 @@ function App() {
       .then((data) => setDesignerData(data?.results));
   }, []);
 
-  // if (Array.isArray(designers) && designers.length === 0) {
-  //   return <div>No Data Found</div>;
-  // }
+  if (Array.isArray(designers) && designers.length === 0) {
+    return <div>No Data Found</div>;
+  }
 
   function renderSection(heading: string, data: Data[] | undefined) {
     return (
@@ -82,9 +82,9 @@ function App() {
     );
   }
 
-  // if (designers == undefined) {
-  //   return <AnimateSpinner size={128} color="orange" />;
-  // }
+  if (designers == undefined) {
+    return <AnimateSpinner size={128} color="orange" />;
+  }
 
   return (
     <React.Fragment>{renderSection("Designers", designers)}</React.Fragment>
